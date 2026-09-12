@@ -1,0 +1,10 @@
+{
+  "name": "quickvoiceclip-tts",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "Cloudflare Pages text-to-speech app with MeloTTS, audio format detection, and browser playback.",
+  "license": "MIT",
+  "scripts": {"test": "node --test", "deploy": "wrangler pages deploy public --branch main"},
+  "devDependencies": {"wrangler": "4.131.1"}
+}
