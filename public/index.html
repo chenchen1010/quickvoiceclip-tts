@@ -1,0 +1,19 @@
+<!doctype html>
+<html lang="en">
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>TikTok TTS | Text to Speech & Audio Download</title><meta name="description" content="Create English voiceovers for your TikTok videos. Turn text into speech, listen, and download your audio. No sign-up required."><link rel="stylesheet" href="/style.css"><script defer src="/lucide.js"></script><script defer src="/app.js"></script></head>
+<body>
+<header><a class="brand" href="/" aria-label="TikTok TTS home"><span class="brand-icon"><i data-lucide="audio-lines"></i></span>TikTok TTS<span class="tag">STUDIO</span></a><span class="header-note">No sign-up needed</span></header>
+<main>
+<div class="heading"><div><p class="eyebrow">TEXT TO SPEECH</p><h1>Your words. Out loud.</h1><p class="intro">English voiceovers for your next TikTok.</p></div><span class="format"><span></span> Downloadable audio</span></div>
+<form id="tts-form">
+<div class="editor-heading"><label for="text">Your script</label><button type="button" id="clear" class="icon-button" title="Clear text" aria-label="Clear text"><i data-lucide="trash-2"></i></button></div>
+<textarea id="text" name="text" placeholder="Paste or write your text here..." aria-describedby="counter message" spellcheck="true"></textarea>
+<div class="editor-footer"><span>English voice</span><span id="counter">0 / 1,000 characters</span></div>
+<div class="generate-row"><span class="privacy"><i data-lucide="file-audio"></i> Your voiceover, ready to download</span><button class="primary" id="generate" type="submit"><i data-lucide="sparkles"></i><span>Generate audio</span></button></div>
+<p id="message" role="status" aria-live="polite"></p>
+</form>
+<section id="result" hidden aria-label="Generated audio"><div class="result-heading"><div><p class="eyebrow">READY TO LISTEN</p><h2>Your voiceover</h2></div><i data-lucide="audio-lines"></i></div><audio id="audio" controls preload="metadata"></audio><a id="download" class="download" download><i data-lucide="download"></i><span>Download audio</span></a></section>
+<p class="data-notice">Your text is sent to Cloudflare Workers AI to generate speech. Audio playback takes place in your browser.</p>
+
+<footer><span>Made for your next idea.</span><span>Independent tool. Not affiliated with TikTok. Voices are not official TikTok voices.</span></footer>
+</main></body></html>
